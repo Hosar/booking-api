@@ -1,0 +1,19 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type TimeScheduleModel {
+  time: String!
+  isAvailable: Boolean!
+  exist: Boolean!
+}
+
+type TimeScheduleModel2 {
+  day: Float!
+  spots: [TimeScheduleModel!]!
+}
+
+type Query {
+  getBookingSpots: [[TimeScheduleModel!]!]!
+  getAll: [[TimeScheduleModel2!]!]!
+}
